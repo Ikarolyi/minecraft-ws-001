@@ -1,0 +1,11 @@
+---
+application:
+  name: "minecraft-ws-001"
+  project: "minecraft-ws-001"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-minecraft-ws-001"
+  routes:
+  - application_name: "minecraft-ws-001"
+    paths:
+    - "/*"
