@@ -35,9 +35,11 @@ wss.on('connection', function connection(ws) {
 	}
 	ws.on("message", function incoming(message) {
 		if (JSON.parse(message).body.eventName == "PlayerMessage") {
+      console.log("Chat Writed.")
             var agent_command = JSON.parse(message).body.properties.Message;
-            if (agent_command.substring(0, 1) == "#") {
-                command(agent_command.substring(1, agent_command.length));
+            console.log("\"" + agent_command + "\"")
+            if (agent_command.substring(0, 1) == "[") {
+                command(agent_command.substring(5, agent_command.length));
             }}
-	});
+  });
 });

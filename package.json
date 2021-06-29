@@ -5,5 +5,8 @@
     "minecraft-protocol": "^1.25.0",
     "uuid": "^8.3.2",
     "ws": "^7.5.0"
+  }, 
+  "scripts": {
+      "start": "node Minecraft.js"
   }
 }
