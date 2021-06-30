@@ -3,10 +3,11 @@
     "express": "^4.17.1",
     "http": "^0.0.1-security",
     "minecraft-protocol": "^1.25.0",
+    "socket.io": "^4.1.2",
     "uuid": "^8.3.2",
     "ws": "^7.5.0"
-  }, 
+  },
   "scripts": {
-      "start": "node Minecraft.js"
+    "start": "node Minecraft.js"
   }
 }
